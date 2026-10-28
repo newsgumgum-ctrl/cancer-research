@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Razumeti nalaze · ONB Kompas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ONB Kompas: znanje o raku za pacijente i porodice / cancer knowledge for patients and families">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>try{var l=localStorage.getItem('onb-lang');if(l==='en'||l==='sr')document.documentElement.setAttribute('data-lang',l)}catch(e){}</script>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="var(--sage)" stroke-width="2"/><path d="M16 5 L19 16 L16 27 L13 16 Z" fill="var(--lav)"/><circle cx="16" cy="16" r="2.2" fill="var(--surface)"/></svg><span class="brand-name">ONB Kompas</span></a>
+    <nav class="nav" aria-label="Glavne stranice / Main pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a></nav>
+    <details class="more" id="more-menu" data-current="true">
+      <summary><span class="more-desk"><span class="sr">Više</span><span class="en">More</span></span><span class="more-mob"><span class="sr">Meni</span><span class="en">Menu</span></span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="menu" role="menu"><a class="menu-primary" href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a class="menu-primary" href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a class="menu-primary" href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a class="menu-primary" href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a class="menu-primary" href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><span class="menu-sep" aria-hidden="true"></span><span class="menu-label"><span class="sr">Saveti i vodiči</span><span class="en">Guides and advice</span></span><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html" aria-current="page"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></div>
+    </details>
+    <div class="lang" role="group" aria-label="Jezik / Language">
+      <button type="button" id="lang-sr" data-set-lang="sr" aria-pressed="true">SR</button>
+      <button type="button" id="lang-en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<main id="top">
+  <div class="wrap hero">
+    <span class="eyebrow"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></span>
+    <h1><span class="sr">Pročitajte svoj nalaz <em>kao lekar</em></span><span class="en">Read your report <em>like a doctor</em></span></h1>
+    <div class="speakers"><span class="who sage">Dr Roman</span></div>
+    <div class="prose">
+      <p class="lead"><span class="sr">Dr Roman smatra da svaki pacijent treba da dobije kopiju svog nalaza i da ga razume. Ovde su njegova objašnjenja za pet tema. Otvorite onu koja vas zanima.</span><span class="en">Dr Roman believes every patient should get a copy of their report and understand it. Here are his explanations for five topics. Open the one you need.</span></p>
+    </div>
+  </div>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block">
+    <details class="acc" id="mamografija" open>
+      <summary><h3><span class="sr">Mamografija i BI-RADS</span><span class="en">Mammograms and BI-RADS</span></h3></summary>
+      <div class="acc-body">
+        <p><span class="sr">Mamografija ne sprečava rak dojke, ali ga otkriva ranije, kada je lakše lečiv. To je jedina metoda za koju su randomizovane studije pokazale da smanjuje smrtnost od raka dojke; za ultrazvuk to ne važi. Ima malo zračenja, oko 0,4 mSv.</span><span class="en">A mammogram doesn't prevent breast cancer but finds it earlier, when it's more treatable. It is the only method shown in randomised trials to reduce breast cancer deaths; that isn't true for ultrasound. It carries little radiation, about 0.4 mSv.</span></p>
+        <div class="grid2">
+          <div class="card s"><h3 class="plain-h"><span class="sr">Kalcifikacije</span><span class="en">Calcifications</span></h3><p><span class="sr">Mamografija dobro vidi sitne naslage kalcijuma, prisutne kod oko 40% invazivnih karcinoma i oko 80% duktalnih karcinoma in situ. Ultrazvuk ih slabo vidi.</span><span class="en">Mammograms see tiny calcium deposits well; they appear in about 40% of invasive cancers and about 80% of ductal carcinoma in situ. Ultrasound sees them poorly.</span></p></div>
+          <div class="card y"><h3 class="plain-h h-y"><span class="sr">Guste dojke</span><span class="en">Dense breasts</span></h3><p><span class="sr">Mamografija promaši 20–30% karcinoma, najčešće kod gustih dojki (mlađe i vitkije žene). Radiolog tada predlaže dodatni pregled: ciljane snimke, MR, ultrazvuk ili mamografiju sa kontrastom.</span><span class="en">Mammograms miss 20–30% of cancers, most often in dense breasts (younger, leaner women). The radiologist then suggests an extra test: spot views, MRI, ultrasound or contrast mammography.</span></p></div>
+        </div>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th class="num">BI-RADS</th><th><span class="sr">Značenje</span><span class="en">Meaning</span></th><th><span class="sr">Sledeći korak</span><span class="en">Next step</span></th></tr></thead>
+            <tbody>
+              <tr><td class="num"><strong>0</strong></td><td><span class="sr">Nepotpuno, treba još snimaka ili poređenje sa starim</span><span class="en">Incomplete, more images or comparison with old films needed</span></td><td><span class="sr">Dodatna snimanja</span><span class="en">Additional imaging</span></td></tr>
+              <tr><td class="num"><strong>1</strong></td><td><span class="sr">Potpuno normalno</span><span class="en">Completely normal</span></td><td><span class="sr">Redovna mamografija za godinu dana</span><span class="en">Routine mammogram in a year</span></td></tr>
+              <tr><td class="num"><strong>2</strong></td><td><span class="sr">Benigno: cista, ožiljak, kalcifikovani fibroadenom</span><span class="en">Benign: cyst, scar, calcified fibroadenoma</span></td><td><span class="sr">Redovna mamografija za godinu dana</span><span class="en">Routine mammogram in a year</span></td></tr>
+              <tr><td class="num"><strong>3</strong></td><td><span class="sr">Verovatno benigno, rizik ≤2%</span><span class="en">Probably benign, risk ≤2%</span></td><td><span class="sr">Kontrola za oko 6 meseci</span><span class="en">Follow-up in about 6 months</span></td></tr>
+              <tr><td class="num"><strong>4 (A, B, C)</strong></td><td><span class="sr">Sumnjivo, rizik od preko 2% do 94–95% (A niži, C viši)</span><span class="en">Suspicious, risk from over 2% up to 94–95% (A lower, C higher)</span></td><td><span class="sr">Biopsija</span><span class="en">Biopsy</span></td></tr>
+              <tr><td class="num"><strong>5</strong></td><td><span class="sr">Visoko sumnjivo, rizik ≥95%</span><span class="en">Highly suspicious, risk ≥95%</span></td><td><span class="sr">Biopsija</span><span class="en">Biopsy</span></td></tr>
+              <tr><td class="num"><strong>6</strong></td><td><span class="sr">Rak je već potvrđen biopsijom</span><span class="en">Cancer already confirmed by biopsy</span></td><td><span class="sr">Plan lečenja</span><span class="en">Treatment plan</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout sage"><p><span class="sr">Saveti: pregledajte dojke same jednom mesečno (2–3 dana posle menstruacije), kod lekara jednom godišnje, i radite mamografije uvek na istom mestu da bi se snimci mogli porediti.</span><span class="en">Tips: examine your breasts monthly (2–3 days after your period), have a doctor's exam yearly, and get mammograms at the same place so images can be compared.</span></p></div>
+      </div>
+    </details>
+
+    <details class="acc" id="prostata">
+      <summary><h3><span class="sr">Rak prostate: rizik i lečenje</span><span class="en">Prostate cancer: risk and treatment</span></h3></summary>
+      <div class="acc-body">
+        <p><span class="sr">Kod većine muškaraca rak prostate nije uzrok smrti; „umiru sa njim, a ne od njega“. Zato je ključno proceniti rizik, da se ne leči ono što ne treba, ali i da se ne propusti agresivan tumor.</span><span class="en">For most men prostate cancer is not what kills them; they "die with it, not of it". So assessing risk is key: don't treat what doesn't need treating, but don't miss an aggressive tumour.</span></p>
+        <ol class="path">
+          <li><h3><span class="sr">Tip</span><span class="en">Type</span></h3><p><span class="sr">Adenokarcinom je 95–99% slučajeva. Retki tipovi (sitnoćelijski, neuroendokrini) leče se drugačije.</span><span class="en">Adenocarcinoma is 95–99% of cases. Rare types (small cell, neuroendocrine) are treated differently.</span></p></li>
+          <li><h3><span class="sr">Proširenost</span><span class="en">Spread</span></h3><p><span class="sr">Lokalni (samo prostata), regionalni (limfni čvorovi) ili metastatski. Najbolji snimak je PSMA PET.</span><span class="en">Local (prostate only), regional (lymph nodes) or metastatic. The best scan is a PSMA PET.</span></p></li>
+          <li><h3><span class="sr">Gleason i grupa</span><span class="en">Gleason and grade group</span></h3><p><span class="sr">Gleason 6 = grupa 1; 7 (3+4) = grupa 2; 7 (4+3) = grupa 3; 8 = grupa 4; 9–10 = grupa 5. Viši broj, agresivniji tumor.</span><span class="en">Gleason 6 = group 1; 7 (3+4) = group 2; 7 (4+3) = group 3; 8 = group 4; 9–10 = group 5. Higher means more aggressive.</span></p></li>
+          <li><h3><span class="sr">PSA</span><span class="en">PSA</span></h3><p><span class="sr">Normalno ispod 4, ali niže kod mladih. Visok PSA nije uvek rak (npr. uvećana prostata), a 5–10% karcinoma uopšte ne stvara PSA.</span><span class="en">Normal is under 4, but lower in young men. A high PSA isn't always cancer (e.g. enlarged prostate), and 5–10% of cancers make no PSA at all.</span></p></li>
+        </ol>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th><span class="sr">Rizik (lokalni rak)</span><span class="en">Risk (local cancer)</span></th><th><span class="sr">Kriterijumi</span><span class="en">Criteria</span></th><th><span class="sr">Obično</span><span class="en">Usually</span></th></tr></thead>
+            <tbody>
+              <tr><td><strong><span class="sr">Nizak</span><span class="en">Low</span></strong></td><td><span class="sr">T1–T2a, grupa 1 i PSA ispod 10 (sve tri)</span><span class="en">T1–T2a, group 1 and PSA under 10 (all three)</span></td><td><span class="sr">Aktivno praćenje</span><span class="en">Active surveillance</span></td></tr>
+              <tr><td><strong><span class="sr">Srednji povoljni</span><span class="en">Favourable intermediate</span></strong></td><td><span class="sr">Jedan srednji faktor (T2b–T2c, grupa 2–3, PSA 10–20), grupa 1–2 i manje od 50% pozitivnih biopsija</span><span class="en">One intermediate factor (T2b–T2c, group 2–3, PSA 10–20), group 1–2 and under 50% positive cores</span></td><td><span class="sr">Lečenje ili praćenje</span><span class="en">Treatment or surveillance</span></td></tr>
+              <tr><td><strong><span class="sr">Srednji nepovoljni</span><span class="en">Unfavourable intermediate</span></strong></td><td><span class="sr">Dva ili više srednjih faktora, ili grupa 3, ili 50% i više pozitivnih biopsija</span><span class="en">Two or more intermediate factors, or group 3, or 50%+ positive cores</span></td><td><span class="sr">Lečenje</span><span class="en">Treatment</span></td></tr>
+              <tr><td><strong><span class="sr">Visok</span><span class="en">High</span></strong></td><td><span class="sr">Bar jedno: T3–T4, grupa 4–5, PSA iznad 20</span><span class="en">At least one: T3–T4, group 4–5, PSA over 20</span></td><td><span class="sr">Lečenje</span><span class="en">Treatment</span></td></tr>
+              <tr><td><strong><span class="sr">Veoma visok</span><span class="en">Very high</span></strong></td><td><span class="sr">Bar dva: T3–T4, grupa 4–5, PSA iznad 40</span><span class="en">At least two: T3–T4, group 4–5, PSA over 40</span></td><td><span class="sr">Lečenje</span><span class="en">Treatment</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid2">
+          <div class="card">
+            <h3 class="plain-h"><span class="sr">Lokalni i regionalni rak</span><span class="en">Local and regional cancer</span></h3>
+            <ul class="dots">
+              <li><span class="sr">Aktivno praćenje (PSA, snimanja) ili samo posmatranje kod očekivanog života kraćeg od 5 godina</span><span class="en">Active surveillance (PSA, scans) or simple observation when life expectancy is under 5 years</span></li>
+              <li><span class="sr">Radikalna prostatektomija, obično uz uklanjanje limfnih čvorova karlice</span><span class="en">Radical prostatectomy, usually with pelvic lymph node removal</span></li>
+              <li><span class="sr">Zračenje spolja ili „semenke“ (brahiterapija)</span><span class="en">External radiation or "seed" implants (brachytherapy)</span></li>
+              <li><span class="sr">Fokalne metode (zamrzavanje, HIFU), sa manje podataka</span><span class="en">Focal methods (freezing, HIFU), with less data</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="plain-h"><span class="sr">Hormonska i druge terapije</span><span class="en">Hormonal and other therapies</span></h3>
+            <ul class="dots">
+              <li><span class="sr">Snižavanje testosterona: agonisti LHRH (Lupron, Eligard), antagonisti (degareliks, relugoliks), uklanjanje testisa</span><span class="en">Lowering testosterone: LHRH agonists (Lupron, Eligard), antagonists (degarelix, relugolix), removal of the testicles</span></li>
+              <li><span class="sr">Agonisti prvih 2–4 nedelje podignu testosteron („flare“), pa se kod velike bolesti daje i antiandrogen (npr. bikalutamid)</span><span class="en">Agonists raise testosterone for the first 2–4 weeks ("flare"), so with heavy disease an anti-androgen (e.g. bicalutamide) is added</span></li>
+              <li><span class="sr">Novi antiandrogeni: abirateron, enzalutamid, apalutamid, darolutamid</span><span class="en">Newer anti-androgens: abiraterone, enzalutamide, apalutamide, darolutamide</span></li>
+              <li><span class="sr">Kod metastaza: hemioterapija, genetsko testiranje (BRCA, HRR → PARP inhibitori), imunoterapija kod MSI-high ili TMB ≥10, radijum-223, lutecijum-177 PSMA, Provenge, lekovi za kosti</span><span class="en">With metastases: chemotherapy, genetic testing (BRCA, HRR → PARP inhibitors), immunotherapy for MSI-high or TMB ≥10, radium-223, lutetium-177 PSMA, Provenge, bone drugs</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout"><p><span class="sr">Zanimljivo: lutecijum-177 se kod prostate vezuje za PSMA, a kod olfaktornog neuroblastoma za SSTR2. Isti princip „ciljanog zračenja iznutra“. Vidi stranicu o <a href="onb.html">olfaktornom neuroblastomu</a>.</span><span class="en">Interesting: in prostate cancer lutetium-177 targets PSMA, and in olfactory neuroblastoma it targets SSTR2. The same principle of "targeted radiation from inside". See the <a href="onb.html">olfactory neuroblastoma</a> page.</span></p></div>
+      </div>
+    </details>
+
+    <details class="acc" id="jednjak">
+      <summary><h3><span class="sr">Rak jednjaka</span><span class="en">Oesophageal cancer</span></h3></summary>
+      <div class="acc-body">
+        <p><span class="sr">Dva glavna tipa su skvamocelularni karcinom i adenokarcinom; leče se različito. Skvamocelularni je mnogo osetljiviji na zračenje. U nalazu biopsije potražite i diferencijaciju: dobro diferentovan raste sporije, slabo diferentovan agresivnije.</span><span class="en">The two main types are squamous cell carcinoma and adenocarcinoma; they are treated differently. Squamous cell is much more sensitive to radiation. In the biopsy report also look for differentiation: well differentiated grows slower, poorly differentiated more aggressively.</span></p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>T</th><th><span class="sr">Dokle je tumor stigao kroz zid jednjaka</span><span class="en">How far the tumour has grown through the oesophageal wall</span></th></tr></thead>
+            <tbody>
+              <tr><td><strong>Tis</strong></td><td><span class="sr">Tumor in situ, još nije invazivan</span><span class="en">Tumour in situ, not yet invasive</span></td></tr>
+              <tr><td><strong>T1a</strong></td><td><span class="sr">Sluznica (mukoza)</span><span class="en">Lining (mucosa)</span></td></tr>
+              <tr><td><strong>T1b</strong></td><td><span class="sr">Podsluznica; čak 15–23% već ima zahvaćene limfne čvorove</span><span class="en">Submucosa; 15–23% already have involved lymph nodes</span></td></tr>
+              <tr><td><strong>T2</strong></td><td><span class="sr">Mišićni sloj</span><span class="en">Muscle layer</span></td></tr>
+              <tr><td><strong>T3</strong></td><td><span class="sr">Spoljašnji sloj (adventicija)</span><span class="en">Outer layer (adventitia)</span></td></tr>
+              <tr><td><strong>T4a / T4b</strong></td><td><span class="sr">Okolni organi koji se mogu operisati (plura, perikard) / koji ne mogu (aorta, dušnik, kičma)</span><span class="en">Nearby structures that can be removed (pleura, pericardium) / that cannot (aorta, trachea, spine)</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted"><span class="sr">N: N0 bez zahvaćenih čvorova, N1 1–2, N2 3–6, N3 sedam i više. Stadijum se određuje PET-CT-om i endoskopskim ultrazvukom.</span><span class="en">N: N0 no nodes, N1 1–2, N2 3–6, N3 seven or more. Staging uses PET-CT and endoscopic ultrasound.</span></p>
+        <div class="grid2">
+          <div class="card">
+            <h3 class="plain-h"><span class="sr">Lečenje po stadijumu</span><span class="en">Treatment by stage</span></h3>
+            <ul class="dots">
+              <li><span class="sr">Tis i T1a N0: endoskopsko uklanjanje, bez velike operacije</span><span class="en">Tis and T1a N0: endoscopic removal, no major surgery</span></li>
+              <li><span class="sr">T1b N0: najčešće ezofagektomija (uklanjanje dela jednjaka sa limfnim čvorovima)</span><span class="en">T1b N0: usually oesophagectomy (removing part of the oesophagus with lymph nodes)</span></li>
+              <li><span class="sr">T2 do T4a: terapija pre operacije, pa operacija, ili definitivna hemio-radioterapija bez operacije</span><span class="en">T2 to T4a: treatment before surgery, then surgery, or definitive chemoradiation without surgery</span></li>
+              <li><span class="sr">T4b: definitivna hemio-radioterapija</span><span class="en">T4b: definitive chemoradiation</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="plain-h"><span class="sr">Važno je pitati</span><span class="en">Worth asking</span></h3>
+            <ul class="dots">
+              <li><span class="sr">Adenokarcinom: FLOT (hemio pre i posle operacije) je obično prvi izbor; studija ESOPEC je pokazala bolje preživljavanje nego CROSS. Oko polovine pacijenata ne završi FLOT posle operacije.</span><span class="en">Adenocarcinoma: FLOT (chemo before and after surgery) is usually preferred; the ESOPEC trial showed better survival than CROSS. About half of patients don't finish FLOT after surgery.</span></li>
+              <li><span class="sr">Skvamocelularni: posle hemio-radioterapije oko 50% nema živog tumora u operisanom tkivu; ako tumora ima, godinu dana imunoterapije (nivolumab).</span><span class="en">Squamous: after chemoradiation about 50% have no living tumour in the removed tissue; if tumour remains, a year of immunotherapy (nivolumab).</span></li>
+              <li><span class="sr">Da li je tumor MSI-high ili dMMR? Tada je imunoterapija veoma važna.</span><span class="en">Is the tumour MSI-high or dMMR? Then immunotherapy is very important.</span></li>
+              <li><span class="sr">Kod metastaza: PD-L1 (CPS) i mutacije NTRK, BRAF, RET.</span><span class="en">With metastases: PD-L1 (CPS) and NTRK, BRAF, RET mutations.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="acc" id="plazmocitom">
+      <summary><h3><span class="sr">Plazmocitom</span><span class="en">Plasmacytoma</span></h3></summary>
+      <div class="acc-body">
+        <p><span class="sr">Plazmocitom je tumor od plazma ćelija, ćelija koje prave antitela. Većina pacijenata ima i multipli mijelom, a oko 5% ima samo jedan, „solitarni“ plazmocitom. U kosti je najčešće u kičmi. Van kosti se oko 80% javlja u glavi i vratu: u nosnoj šupljini, sinusima, ždrelu i grkljanu.</span><span class="en">A plasmacytoma is a tumour of plasma cells, the cells that make antibodies. Most patients also have multiple myeloma; about 5% have just one, "solitary" plasmacytoma. In bone it is most often in the spine. Outside bone about 80% occur in the head and neck: nasal cavity, sinuses, pharynx and larynx.</span></p>
+        <div class="grid2">
+          <div class="card">
+            <h3 class="plain-h"><span class="sr">Šta se proverava</span><span class="en">What gets checked</span></h3>
+            <ul class="dots">
+              <li><span class="sr">Krvna slika, biohemija (bubrezi, kalcijum, jetra), imunoglobulini, elektroforeza proteina seruma i urina, slobodni laki lanci, beta-2 mikroglobulin</span><span class="en">Blood count, chemistry (kidneys, calcium, liver), immunoglobulins, serum and urine protein electrophoresis, free light chains, beta-2 microglobulin</span></li>
+              <li><span class="sr">Biopsija koštane srži: nema klonalnih plazma ćelija, manje od 10%, ili 10% i više</span><span class="en">Bone marrow biopsy: no clonal plasma cells, under 10%, or 10% or more</span></li>
+              <li><span class="sr">MR celog tela ili PET-CT</span><span class="en">Whole-body MRI or PET-CT</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 class="plain-h"><span class="sr">Lečenje i praćenje</span><span class="en">Treatment and follow-up</span></h3>
+            <ul class="dots">
+              <li><span class="sr">Solitarni plazmocitom: zračenje je prvi izbor; operacija u posebnim slučajevima</span><span class="en">Solitary plasmacytoma: radiation first; surgery in special cases</span></li>
+              <li><span class="sr">Sa mijelomom: lečenje kao mijelom (sistemska terapija)</span><span class="en">With myeloma: treated as myeloma (systemic therapy)</span></li>
+              <li><span class="sr">Oko 50% pređe u mijelom za 5 godina posle zračenja; kod plazmocitoma kosti 35%, a van kosti 7% za 2 godine</span><span class="en">About 50% progress to myeloma within 5 years after radiation; for bone plasmacytoma 35%, outside bone 7% at 2 years</span></li>
+              <li><span class="sr">Analize na 3–6 meseci; snimanje jednom godišnje do 5 godina. Posle zračenja sačekajte nekoliko meseci pre prvog snimka, jer zračenje deluje još 3–5 meseci.</span><span class="en">Labs every 3–6 months; scans yearly for up to 5 years. After radiation wait a few months before the first scan, as radiation keeps working for 3–5 months.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <details class="acc" id="krvna-slika">
+      <summary><h3><span class="sr">Krvna slika i anemija</span><span class="en">Blood counts and anaemia</span></h3></summary>
+      <div class="acc-body">
+        <p><span class="sr">Anemija je manjak hemoglobina: kod žena ispod 12, kod muškaraca ispod 13. Simptomi su umor, bledilo, glavobolja, opadanje kose, ubrzan rad srca, nemirne noge, a kod nedostatka gvožđa i neobična želja da se gricka led.</span><span class="en">Anaemia is low haemoglobin: under 12 in women, under 13 in men. Symptoms include fatigue, pallor, headache, hair loss, a racing heart, restless legs, and with iron deficiency an odd urge to chew ice.</span></p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th><span class="sr">Oznaka</span><span class="en">Label</span></th><th><span class="sr">Šta znači</span><span class="en">What it means</span></th></tr></thead>
+            <tbody>
+              <tr><td><strong>WBC</strong></td><td><span class="sr">Bela krvna zrnca (4–11); uvek pogledajte i podelu (neutrofili, limfociti...)</span><span class="en">White cells (4–11); always look at the breakdown too (neutrophils, lymphocytes...)</span></td></tr>
+              <tr><td><strong>RBC</strong></td><td><span class="sr">Broj crvenih krvnih zrnaca</span><span class="en">Number of red cells</span></td></tr>
+              <tr><td><strong>HGB / HCT</strong></td><td><span class="sr">Hemoglobin nosi kiseonik; hematokrit je otprilike hemoglobin × 3</span><span class="en">Haemoglobin carries oxygen; haematocrit is roughly haemoglobin × 3</span></td></tr>
+              <tr><td><strong>MCV</strong></td><td><span class="sr">Prosečna veličina eritrocita: ispod 80 mala (mikrocitna), 80–100 normalna, iznad 100 velika (makrocitna)</span><span class="en">Average red cell size: under 80 small (microcytic), 80–100 normal, over 100 large (macrocytic)</span></td></tr>
+              <tr><td><strong>RDW</strong></td><td><span class="sr">Razlika u veličini eritrocita; povišen kod nedostatka gvožđa</span><span class="en">Variation in red cell size; high in iron deficiency</span></td></tr>
+              <tr><td><strong>PLT</strong></td><td><span class="sr">Trombociti: nizak broj, rizik od krvarenja; visok, rizik od ugruška</span><span class="en">Platelets: low means bleeding risk; high means clot risk</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="grid3">
+          <div class="card s"><h3 class="plain-h"><span class="sr">Feritin ispod 30</span><span class="en">Ferritin under 30</span></h3><p><span class="sr">Znači nedostatak gvožđa, bez obzira na ostale nalaze. Kod muškaraca i žena posle menopauze obavezno pregled creva.</span><span class="en">Means iron deficiency, whatever the other results. In men and post-menopausal women, always check the bowel.</span></p></div>
+          <div class="card y"><h3 class="plain-h h-y"><span class="sr">Talasemija</span><span class="en">Thalassaemia</span></h3><p><span class="sr">Visok RBC i veoma nizak MCV (60-ih), često porodična anemija. Ne treba davati gvožđe, jer je preopterećenje gvožđem glavna opasnost.</span><span class="en">High RBC with a very low MCV (in the 60s), often family anaemia. Iron should not be given, as iron overload is the main danger.</span></p></div>
+          <div class="card s"><h3 class="plain-h"><span class="sr">B12 i folna kiselina</span><span class="en">B12 and folate</span></h3><p><span class="sr">Veliki eritrociti (MCV često preko 110). Metilmalonska kiselina je povišena samo kod manjka B12. Posle operacije želuca B12 se obično daje u injekcijama.</span><span class="en">Large red cells (MCV often over 110). Methylmalonic acid is high only in B12 deficiency. After stomach surgery B12 is usually given by injection.</span></p></div>
+        </div>
+        <p class="small muted"><span class="sr">Anemija može imati više uzroka istovremeno, na primer manjak gvožđa i B12, što zbunjuje nalaze. Hronične bolesti i bubrezi takođe daju anemiju.</span><span class="en">Anaemia can have several causes at once, for example low iron and B12 together, which confuses results. Chronic illness and kidney disease also cause anaemia.</span></p>
+      </div>
+    </details>
+  </section>
+
+</main>
+<nav class="wrap pager" aria-label="Sledeća stranica / Next page"><a href="lecenje.html"><small><span class="sr">← Prethodno</span><span class="en">← Previous</span></small><b><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></b></a><a class="next" href="izvori.html"><small><span class="sr">Sledeće →</span><span class="en">Next →</span></small><b><span class="sr">Izvori</span><span class="en">Sources</span></b></a></nav>
+<footer>
+  <div class="wrap foot">
+    <div class="sieve" aria-hidden="true"></div>
+    <p class="muted small"><span class="sr">Sajt su napravili</span><span class="en">Created by</span></p>
+    <p class="authors">Sanjin Hodžić &amp; Semin Zoranić</p>
+    <p><span class="sr">Veliki deo istraživanja urađen je uz pomoć Claude-a, AI asistenta kompanije Anthropic. Hvala!</span><span class="en">Much of the research was done with the help of Claude, the AI assistant made by Anthropic. Thank you!</span></p>
+    <div class="disclaimer">
+      <p><span class="sr">Ovaj sajt služi za informisanje i ne zamenjuje savet lekara. Autori nisu lekari. Sadržaj prenosi ono što su lekari i naučnici rekli u javnim predavanjima i razgovorima, uz navedeno ime govornika. Anthropic nije pregledao niti odobrio sadržaj. Svaku odluku o lečenju donesite zajedno sa svojim onkologom.</span><span class="en">This site is for information only and does not replace medical advice. The authors are not doctors. The content reports what doctors and scientists said in public talks and interviews, with each speaker named. Anthropic has not reviewed or endorsed the content. Make every treatment decision together with your oncologist.</span></p>
+    </div>
+    <nav class="foot-links" aria-label="Sve stranice / All pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></nav>
+    <p><button type="button" class="btn" id="change-lang"><span class="sr">Promeni jezik · Change language</span><span class="en">Change language · Promeni jezik</span></button></p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

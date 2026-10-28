@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ONB Kompas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ONB Kompas: znanje o raku za pacijente i porodice / cancer knowledge for patients and families">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>try{var l=localStorage.getItem('onb-lang');if(l==='en'||l==='sr')document.documentElement.setAttribute('data-lang',l)}catch(e){}</script>
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate-in">
+    <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="var(--sage)" stroke-width="2"/><path d="M16 5 L19 16 L16 27 L13 16 Z" fill="var(--lav)"/><circle cx="16" cy="16" r="2.2" fill="var(--surface)"/></svg>
+    <h1 id="gate-title">ONB Kompas</h1>
+    <div class="gate-sub">
+      <p>Znanje o raku, objašnjeno mirno i jasno.</p>
+      <p>Cancer knowledge, explained calmly and clearly.</p>
+    </div>
+    <div class="sieve" aria-hidden="true"></div>
+    <p class="muted small">Izaberite jezik · Choose your language</p>
+    <div class="gate-btns">
+      <button type="button" id="gate-sr" data-set-lang="sr"><b>Srpski</b><span>Nastavi na srpskom</span></button>
+      <button type="button" id="gate-en" data-set-lang="en"><b>English</b><span>Continue in English</span></button>
+    </div>
+  </div>
+</div>
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="var(--sage)" stroke-width="2"/><path d="M16 5 L19 16 L16 27 L13 16 Z" fill="var(--lav)"/><circle cx="16" cy="16" r="2.2" fill="var(--surface)"/></svg><span class="brand-name">ONB Kompas</span></a>
+    <nav class="nav" aria-label="Glavne stranice / Main pages"><a href="index.html" aria-current="page"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a></nav>
+    <details class="more" id="more-menu">
+      <summary><span class="more-desk"><span class="sr">Više</span><span class="en">More</span></span><span class="more-mob"><span class="sr">Meni</span><span class="en">Menu</span></span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="menu" role="menu"><a class="menu-primary" href="index.html" aria-current="page"><span class="sr">Početna</span><span class="en">Home</span></a><a class="menu-primary" href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a class="menu-primary" href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a class="menu-primary" href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a class="menu-primary" href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><span class="menu-sep" aria-hidden="true"></span><span class="menu-label"><span class="sr">Saveti i vodiči</span><span class="en">Guides and advice</span></span><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></div>
+    </details>
+    <div class="lang" role="group" aria-label="Jezik / Language">
+      <button type="button" id="lang-sr" data-set-lang="sr" aria-pressed="true">SR</button>
+      <button type="button" id="lang-en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<main id="top">
+  <div class="wrap hero">
+    <span class="eyebrow"><span class="sr">Za pacijente i porodice</span><span class="en">For patients and families</span></span>
+    <h1><span class="sr">Znanje koje <em>smiruje</em></span><span class="en">Knowledge that <em>calms</em></span></h1>
+    <div class="prose">
+      <p class="lead"><span class="sr">Ovaj sajt je nastao iz pitanja jedne porodice koja se suočila sa olfaktornim neuroblastomom. Tražeći odgovore, slušali smo lekare i naučnike koji svakodnevno rade sa rakom. Ovde smo sve složili na jedno mesto, jednostavnim rečima.</span><span class="en">This site grew out of the questions of one family facing olfactory neuroblastoma. Looking for answers, we listened to doctors and scientists who work with cancer every day. Here we put it all in one place, in plain words.</span></p>
+    </div>
+    <div style="display:grid; gap:8px; width:100%; max-width:860px">
+      <div class="video" id="video-slot">
+        <iframe src="https://www.youtube-nocookie.com/embed/e2KU_oWhYMU" title="ONB Kompas video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="small muted"><span class="sr">Video se ne učitava? </span><span class="en">Video not loading? </span><a href="https://youtu.be/e2KU_oWhYMU" target="_blank" rel="noopener"><span class="sr">Otvorite ga na YouTube-u</span><span class="en">Open it on YouTube</span></a></p>
+    </div>
+  </div>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block" id="teme">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Teme</span><span class="en">Topics</span></span>
+      <h2><span class="sr">Gde želite da počnete?</span><span class="en">Where would you like to start?</span></h2>
+      <p class="muted"><span class="sr">Svaka stranica je povezana sa ostalima. Možete ih čitati redom ili birati ono što vas sada zanima.</span><span class="en">Every page links to the others. Read them in order or pick what matters to you right now.</span></p>
+    </div>
+    <div class="hub">
+      <a href="onb.html">
+        <span class="num">01 · <span class="sr">Bolest</span><span class="en">The disease</span></span>
+        <h3><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></h3>
+        <p><span class="sr">Šta je, stadijumi i gradus, lečenje, praćenje i jedna anonimna priča pacijentkinje.</span><span class="en">What it is, stage and grade, treatment, follow-up and one patient's anonymous story.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="lekovi.html">
+        <span class="num">02 · Dr Roman</span>
+        <h3><span class="sr">Fenbendazol, ivermektin, mebendazol</span><span class="en">Fenbendazole, ivermectin, mebendazole</span></h3>
+        <p><span class="sr">Šta pokazuju laboratorija i studije, bezbednost i priče pacijenata Majka i Rajana.</span><span class="en">What the lab and the studies show, safety, and the stories of patients Mike and Ryan.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="metabolizam.html">
+        <span class="num">03 · Prof. Thomas Seyfried</span>
+        <h3><span class="sr">Rak kao metabolička bolest</span><span class="en">Cancer as a metabolic disease</span></h3>
+        <p><span class="sr">Mitohondrije, glukoza i glutamin, GKI indeks sa kalkulatorom i metabolička terapija uz standardno lečenje.</span><span class="en">Mitochondria, glucose and glutamine, the GKI index with a calculator, and metabolic therapy alongside standard care.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="hrana.html">
+        <span class="num">04 · Dr William Li</span>
+        <h3><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></h3>
+        <p><span class="sr">Odbrambeni sistemi tela, namirnice koje ih jačaju, pametne kombinacije, mikroplastika i visceralna mast.</span><span class="en">The body's health defences, foods that support them, smart pairings, microplastics and visceral fat.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="ishrana.html">
+        <span class="num">05 · Dr Roman</span>
+        <h3><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></h3>
+        <p><span class="sr">Koliko proteina vam treba (kalkulator), šta pacijenti dobro podnose, pranje voća i povrća i šta izbegavati.</span><span class="en">How much protein you need (calculator), what patients tolerate well, washing produce and what to avoid.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="lecenje.html">
+        <span class="num">06 · Dr Roman</span>
+        <h3><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></h3>
+        <p><span class="sr">„Hemo mozak“, performans status, prilagođavanje doze i zračenje sa snimanja (kalkulator).</span><span class="en">"Chemo brain", performance status, dose adjustments and radiation from scans (calculator).</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="nalazi.html">
+        <span class="num">07 · Dr Roman</span>
+        <h3><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></h3>
+        <p><span class="sr">Mamografija i BI-RADS, prostata, jednjak, plazmocitom i krvna slika, korak po korak.</span><span class="en">Mammograms and BI-RADS, prostate, oesophagus, plasmacytoma and blood counts, step by step.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+      <a href="izvori.html">
+        <span class="num">08 · <span class="sr">Izvori</span><span class="en">Sources</span></span>
+        <h3><span class="sr">Odakle su informacije</span><span class="en">Where the information comes from</span></h3>
+        <p><span class="sr">Spisak predavanja i razgovora koje smo slušali i ko je šta rekao.</span><span class="en">The talks and interviews we listened to and who said what.</span></p>
+        <span class="go"><span class="sr">Otvori →</span><span class="en">Open →</span></span>
+      </a>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block" id="glasovi">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Glasovi koje smo slušali</span><span class="en">The voices we listened to</span></span>
+      <h2><span class="sr">Tri stručnjaka, tri ugla gledanja</span><span class="en">Three experts, three points of view</span></h2>
+      <p class="muted"><span class="sr">Ne slažu se uvek. Zato na sajtu uvek piše ko je šta rekao, a tamo gde se razlikuju, prikazali smo oba pogleda.</span><span class="en">They do not always agree. So the site always says who said what, and where they differ we show both views.</span></p>
+    </div>
+    <div class="grid3">
+      <div class="card">
+        <span class="tag sage"><span class="sr">Kliničar</span><span class="en">Clinician</span></span>
+        <h3>Dr Roman</h3>
+        <p><span class="sr">Hematolog-onkolog iz Južne Floride sa 19 godina prakse. Na svom kanalu objašnjava dijagnoze i lečenje i otvoreno razgovara sa pacijentima koji uzimaju antiparazitike.</span><span class="en">Haematologist-oncologist in South Florida with 19 years of practice. On his channel he explains diagnoses and treatment, and talks openly with patients who take antiparasitic drugs.</span></p>
+      </div>
+      <div class="card">
+        <span class="tag lav"><span class="sr">Lekar i naučnik</span><span class="en">Physician-scientist</span></span>
+        <h3>Dr William Li</h3>
+        <p><span class="sr">Lekar i naučnik školovan na Harvardu, istražuje angiogenezu (rast krvnih sudova) i hranu kao lek. Autor knjiga <em>Eat to Beat Disease</em> i <em>Eat to Beat Your Diet</em>.</span><span class="en">Harvard-trained physician and scientist who studies angiogenesis (blood vessel growth) and food as medicine. Author of <em>Eat to Beat Disease</em> and <em>Eat to Beat Your Diet</em>.</span></p>
+      </div>
+      <div class="card">
+        <span class="tag warn"><span class="sr">Biolog</span><span class="en">Biologist</span></span>
+        <h3>Prof. Thomas Seyfried</h3>
+        <p><span class="sr">Profesor biologije na Boston College-u. Nastavlja rad Ota Varburga i rak posmatra kao metaboličku bolest mitohondrija. Sam kaže da onkologija njegov pogled još ne prihvata.</span><span class="en">Professor of biology at Boston College. He continues Otto Warburg's work and sees cancer as a metabolic disease of the mitochondria. He says himself that oncology does not yet accept his view.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Pre nego što počnete</span><span class="en">Before you start</span></span>
+      <h2><span class="sr">Tri stvari koje smo naučili</span><span class="en">Three things we learned</span></h2>
+    </div>
+    <div class="grid3">
+      <div class="card s">
+        <h3 class="plain-h"><span class="sr">Pitajte i zapisujte</span><span class="en">Ask and write it down</span></h3>
+        <p><span class="sr">Svi lekari koje smo slušali ponavljaju isto: znajte svoj tip tumora, stadijum i plan. Na svakoj stranici su pitanja koja možete poneti na kontrolu.</span><span class="en">Every doctor we listened to says the same: know your tumour type, stage and plan. Each page has questions you can take to your appointment.</span></p>
+      </div>
+      <div class="card l">
+        <h3 class="plain-h"><span class="sr">Ne upoređujte se</span><span class="en">Don't compare yourself</span></h3>
+        <p><span class="sr">Dr Roman kaže da dva pacijenta na istoj terapiji mogu da se osećaju potpuno različito. Vaš put je samo vaš.</span><span class="en">Dr Roman says two patients on the same treatment can feel completely different. Your path is your own.</span></p>
+      </div>
+      <div class="card y">
+        <h3 class="plain-h"><span class="sr">Ne odustajte od kontrola</span><span class="en">Keep your check-ups</span></h3>
+        <p><span class="sr">Šta god dodatno probali, snimanja i pregledi su jedini način da znate šta se zaista dešava.</span><span class="en">Whatever else you try, scans and check-ups are the only way to know what is really happening.</span></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+<nav class="wrap pager" aria-label="Sledeća stranica / Next page"><span></span><a class="next" href="onb.html"><small><span class="sr">Sledeće →</span><span class="en">Next →</span></small><b><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></b></a></nav>
+<footer>
+  <div class="wrap foot">
+    <div class="sieve" aria-hidden="true"></div>
+    <p class="muted small"><span class="sr">Sajt su napravili</span><span class="en">Created by</span></p>
+    <p class="authors">Sanjin Hodžić &amp; Semin Zoranić</p>
+    <p><span class="sr">Veliki deo istraživanja urađen je uz pomoć Claude-a, AI asistenta kompanije Anthropic. Hvala!</span><span class="en">Much of the research was done with the help of Claude, the AI assistant made by Anthropic. Thank you!</span></p>
+    <div class="disclaimer">
+      <p><span class="sr">Ovaj sajt služi za informisanje i ne zamenjuje savet lekara. Autori nisu lekari. Sadržaj prenosi ono što su lekari i naučnici rekli u javnim predavanjima i razgovorima, uz navedeno ime govornika. Anthropic nije pregledao niti odobrio sadržaj. Svaku odluku o lečenju donesite zajedno sa svojim onkologom.</span><span class="en">This site is for information only and does not replace medical advice. The authors are not doctors. The content reports what doctors and scientists said in public talks and interviews, with each speaker named. Anthropic has not reviewed or endorsed the content. Make every treatment decision together with your oncologist.</span></p>
+    </div>
+    <nav class="foot-links" aria-label="Sve stranice / All pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></nav>
+    <p><button type="button" class="btn" id="change-lang"><span class="sr">Promeni jezik · Change language</span><span class="en">Change language · Promeni jezik</span></button></p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

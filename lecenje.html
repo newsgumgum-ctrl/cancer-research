@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tokom lečenja · ONB Kompas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ONB Kompas: znanje o raku za pacijente i porodice / cancer knowledge for patients and families">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>try{var l=localStorage.getItem('onb-lang');if(l==='en'||l==='sr')document.documentElement.setAttribute('data-lang',l)}catch(e){}</script>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="var(--sage)" stroke-width="2"/><path d="M16 5 L19 16 L16 27 L13 16 Z" fill="var(--lav)"/><circle cx="16" cy="16" r="2.2" fill="var(--surface)"/></svg><span class="brand-name">ONB Kompas</span></a>
+    <nav class="nav" aria-label="Glavne stranice / Main pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a></nav>
+    <details class="more" id="more-menu" data-current="true">
+      <summary><span class="more-desk"><span class="sr">Više</span><span class="en">More</span></span><span class="more-mob"><span class="sr">Meni</span><span class="en">Menu</span></span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="menu" role="menu"><a class="menu-primary" href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a class="menu-primary" href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a class="menu-primary" href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a class="menu-primary" href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a class="menu-primary" href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><span class="menu-sep" aria-hidden="true"></span><span class="menu-label"><span class="sr">Saveti i vodiči</span><span class="en">Guides and advice</span></span><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html" aria-current="page"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></div>
+    </details>
+    <div class="lang" role="group" aria-label="Jezik / Language">
+      <button type="button" id="lang-sr" data-set-lang="sr" aria-pressed="true">SR</button>
+      <button type="button" id="lang-en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<main id="top">
+  <div class="wrap hero">
+    <span class="eyebrow"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></span>
+    <h1><span class="sr">Stvari koje vam <em>niko ne kaže</em> na vreme</span><span class="en">Things <em>nobody tells you</em> in time</span></h1>
+    <div class="speakers"><span class="who sage">Dr Roman</span></div>
+    <div class="prose">
+      <p class="lead"><span class="sr">Zaboravnost posle hemioterapije, kako lekari procenjuju da li ste dovoljno jaki za terapiju, šta sve može da se prilagodi i koliko zračenja nose snimanja.</span><span class="en">Forgetfulness after chemotherapy, how doctors judge whether you are strong enough for treatment, what can be adjusted, and how much radiation scans carry.</span></p>
+    </div>
+    <div class="speakers">
+      <a class="btn" href="#hemo-mozak"><span class="sr">„Hemo mozak“</span><span class="en">"Chemo brain"</span></a>
+      <a class="btn" href="#performans"><span class="sr">Performans status</span><span class="en">Performance status</span></a>
+      <a class="btn" href="#prilagodjavanje"><span class="sr">Prilagođavanje terapije</span><span class="en">Adjusting treatment</span></a>
+      <a class="btn" href="#zracenje"><span class="sr">Zračenje sa snimanja</span><span class="en">Radiation from scans</span></a>
+    </div>
+  </div>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block" id="hemo-mozak">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">„Hemo mozak“</span><span class="en">"Chemo brain"</span></span>
+      <h2><span class="sr">Ne ludite, i to obično prolazi</span><span class="en">You're not going crazy, and it usually gets better</span></h2>
+      <p><span class="sr">Stručni naziv je kognitivno oštećenje povezano sa rakom. Javlja se kod 10% do 75% pacijenata na hemioterapiji. Obično počinje nekoliko dana posle početka terapije, a kod manjeg broja i do 6 meseci kasnije. Dr Roman smatra da se prečesto previdi ili pogrešno nazove demencijom.</span><span class="en">The medical name is cancer-related cognitive impairment. It affects 10% to 75% of patients on chemotherapy. It usually starts a few days after treatment begins, and in some people up to 6 months later. Dr Roman thinks it is too often missed or mislabelled as dementia.</span></p>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3 class="plain-h"><span class="sr">Kako izgleda</span><span class="en">What it feels like</span></h3>
+        <ul class="dots">
+          <li><span class="sr">Zaboravljanje imena poznatih ljudi ili gde su ključevi</span><span class="en">Forgetting familiar names or where the keys are</span></li>
+          <li><span class="sr">Mozak „na usporenom snimku“; za ono što je bilo automatsko sada treba razmišljati</span><span class="en">A brain "in slow motion"; what was automatic now takes thought</span></li>
+          <li><span class="sr">Teška koncentracija, odlutate dok čitate</span><span class="en">Poor concentration, drifting off while reading</span></li>
+          <li><span class="sr">Teže rešavanje problema i rad na više stvari odjednom</span><span class="en">Harder problem solving and multitasking</span></li>
+          <li><span class="sr">„Magla u glavi“, reč vam je na vrh jezika</span><span class="en">"Brain fog", the word on the tip of your tongue</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 class="plain-h"><span class="sr">Šta povećava rizik</span><span class="en">What raises the risk</span></h3>
+        <ul class="dots">
+          <li><span class="sr">Neki lekovi: metotreksat, antraciklini (doksorubicin), platina (cisplatin, karboplatin), taksani, 5-FU</span><span class="en">Some drugs: methotrexate, anthracyclines (doxorubicin), platinum (cisplatin, carboplatin), taxanes, 5-FU</span></li>
+          <li><span class="sr">Veće doze i kombinacija više lekova</span><span class="en">Higher doses and combining several drugs</span></li>
+          <li><span class="sr">Starije godine i ranije tegobe sa pamćenjem</span><span class="en">Older age and earlier memory problems</span></li>
+          <li><span class="sr">Depresija, hroničan umor, loš san, bol i lekovi protiv bolova (opijati)</span><span class="en">Depression, chronic fatigue, poor sleep, pain and painkillers (opioids)</span></li>
+          <li><span class="sr">Alkohol</span><span class="en">Alcohol</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th></th><th><span class="sr">„Hemo mozak“</span><span class="en">Chemo brain</span></th><th><span class="sr">Demencija</span><span class="en">Dementia</span></th></tr></thead>
+        <tbody>
+          <tr><td><strong><span class="sr">Tok</span><span class="en">Course</span></strong></td><td><span class="sr">Stabilan, blag, vremenom se popravlja</span><span class="en">Stable, subtle, improves with time</span></td><td><span class="sr">Napreduje i pogoršava se</span><span class="en">Progresses and worsens</span></td></tr>
+          <tr><td><strong><span class="sr">Svakodnevni život</span><span class="en">Daily life</span></strong></td><td><span class="sr">Osoba se sama hrani, kupa, oblači</span><span class="en">The person eats, bathes and dresses alone</span></td><td><span class="sr">Vremenom ometa i osnovne aktivnosti</span><span class="en">Over time it disrupts basic activities</span></td></tr>
+          <tr><td><strong><span class="sr">Svest o problemu</span><span class="en">Awareness</span></strong></td><td><span class="sr">Pacijent je svestan i to ga ljuti</span><span class="en">The patient is aware and frustrated by it</span></td><td><span class="sr">Svest opada</span><span class="en">Awareness declines</span></td></tr>
+          <tr><td><strong><span class="sr">Staro pamćenje</span><span class="en">Long-term memory</span></strong></td><td><span class="sr">Očuvano, pati kratkoročno</span><span class="en">Preserved; short-term suffers</span></td><td><span class="sr">Vremenom i ono strada</span><span class="en">Eventually affected too</span></td></tr>
+          <tr><td><strong><span class="sr">Snimak mozga</span><span class="en">Brain scan</span></strong></td><td><span class="sr">Normalan ili blage promene</span><span class="en">Normal or subtle changes</span></td><td><span class="sr">Često smanjenje mozga (atrofija)</span><span class="en">Often brain shrinkage (atrophy)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid3">
+      <div class="card g"><h3 class="plain-h h-g"><span class="sr">Organizacija</span><span class="en">Organisation</span></h3><p><span class="sr">Podsetnici na telefonu, stvari uvek na istom mestu.</span><span class="en">Phone reminders, items always in the same place.</span></p></div>
+      <div class="card g"><h3 class="plain-h h-g"><span class="sr">Kretanje</span><span class="en">Movement</span></h3><p><span class="sr">Vežbanje značajno poboljšava pažnju i san. Porodica: nemojte terati bolesnika da stalno leži.</span><span class="en">Exercise markedly improves attention and sleep. Families: don't keep the patient in bed all day.</span></p></div>
+      <div class="card g"><h3 class="plain-h h-g"><span class="sr">Meditacija i joga</span><span class="en">Meditation and yoga</span></h3><p><span class="sr">Meta-analiza 29 randomizovanih studija rangirala je meditaciju kao najdelotvorniju pomoć bez lekova.</span><span class="en">A meta-analysis of 29 randomised trials ranked meditation the most effective non-drug help.</span></p></div>
+      <div class="card g"><h3 class="plain-h h-g"><span class="sr">Trening mozga</span><span class="en">Brain training</span></h3><p><span class="sr">Ukrštene reči, instrument, novi jezik, čitanje pa prepričavanje nekome. „Ko ne koristi, gubi.“</span><span class="en">Crosswords, an instrument, a new language, reading and then retelling it. "Use it or lose it."</span></p></div>
+      <div class="card g"><h3 class="plain-h h-g"><span class="sr">Pomoć stručnjaka</span><span class="en">Professional help</span></h3><p><span class="sr">Radna i logopedska terapija, psiholog, kognitivno-bihejvioralna terapija. Psihijatar i psiholog nisu „za lude“.</span><span class="en">Occupational and speech therapy, a psychologist, cognitive behavioural therapy. Psychiatrists and psychologists are not "for crazy people".</span></p></div>
+      <div class="card y"><h3 class="plain-h h-y"><span class="sr">Oprez sa tabletama</span><span class="en">Careful with pills</span></h3><p><span class="sr">Lekovi za smirenje i neki antidepresivi mogu pogoršati stanje i reagovati sa hemioterapijom. Lekovi za pamćenje (npr. donepezil) su poslednja opcija; standardnog leka nema.</span><span class="en">Sedatives and some antidepressants can make it worse and interact with chemotherapy. Memory drugs (e.g. donepezil) are a last resort; there is no standard drug.</span></p></div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block" id="performans">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Performans status</span><span class="en">Performance status</span></span>
+      <h2><span class="sr">Godine su samo broj</span><span class="en">Age is just a number</span></h2>
+      <p><span class="sr">Dr Roman je video pacijente od 60 koji izgledaju gore od nekih od 90. Zato onkolozi ne gledaju godine, nego performans status: koliko ste funkcionalni.</span><span class="en">Dr Roman has seen patients in their 60s who look worse than some in their 90s. So oncologists look not at age but at performance status: how functional you are.</span></p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th class="num">PS</th><th><span class="sr">Šta znači</span><span class="en">What it means</span></th><th><span class="sr">Terapija</span><span class="en">Treatment</span></th></tr></thead>
+        <tbody>
+          <tr><td class="num"><strong>0</strong></td><td><span class="sr">Bez simptoma, potpuno funkcionalni</span><span class="en">No symptoms, fully functional</span></td><td><span class="tag good"><span class="sr">obično se leči, i agresivnije</span><span class="en">usually treated, even aggressively</span></span></td></tr>
+          <tr><td class="num"><strong>1</strong></td><td><span class="sr">Simptomi postoje, ali ste potpuno funkcionalni</span><span class="en">Some symptoms, but fully functional</span></td><td><span class="tag good"><span class="sr">obično se leči</span><span class="en">usually treated</span></span></td></tr>
+          <tr><td class="num"><strong>2</strong></td><td><span class="sr">Mnogo simptoma, ali više od pola dana van kreveta i fotelje</span><span class="en">Many symptoms, but out of bed and chair more than half the day</span></td><td><span class="tag good"><span class="sr">uglavnom se preporučuje lečenje</span><span class="en">treatment usually recommended</span></span></td></tr>
+          <tr><td class="num"><strong>3</strong></td><td><span class="sr">Više od pola dana u krevetu ili fotelji</span><span class="en">In bed or chair more than half the day</span></td><td><span class="tag warn"><span class="sr">često više štete nego koristi</span><span class="en">often more harm than good</span></span></td></tr>
+          <tr><td class="num"><strong>4</strong></td><td><span class="sr">Potpuno vezani za krevet ili fotelju</span><span class="en">Completely bed- or chair-bound</span></td><td><span class="tag bad"><span class="sr">terapija se teško podnosi</span><span class="en">treatment hard to tolerate</span></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3 class="plain-h"><span class="sr">Šta još lekar gleda</span><span class="en">What else the doctor looks at</span></h3>
+        <ul class="dots">
+          <li><span class="sr">Rad bubrega, jetre, srca i mozga. Doze mnogih lekova mogu se prilagoditi slabijim bubrezima ili jetri, a lekovi koji opterećuju srce izbeći.</span><span class="en">Kidney, liver, heart and brain function. Doses of many drugs can be adjusted for weaker kidneys or liver, and heart-straining drugs avoided.</span></li>
+          <li><span class="sr">Koja je vrsta raka: spora ili agresivna, izlečiva ili ne. Kod izlečivog tumora vredi biti hrabriji.</span><span class="en">What kind of cancer: slow or aggressive, curable or not. With a curable tumour it's worth being bolder.</span></li>
+          <li><span class="sr">Ostale bolesti, broj lekova koje uzimate, ishranjenost i podrška kod kuće.</span><span class="en">Other illnesses, how many medicines you take, nutrition and support at home.</span></li>
+        </ul>
+      </div>
+      <div class="card l">
+        <h3 class="plain-h"><span class="sr">Priča iz ordinacije</span><span class="en">A story from the clinic</span></h3>
+        <p><span class="sr">Sestra je pitala Dr Romana da li je siguran da želi da da hemioterapiju starijem pacijentu u kolicima koji je izgledao užasno. Imao je limfom koji dobro odgovara na terapiju. Posle jedne terapije i hidratacije pacijent se oporavio, a sestra je priznala da je pogrešila.</span><span class="en">A nurse asked Dr Roman if he was sure about giving chemotherapy to an elderly patient in a wheelchair who looked awful. He had a lymphoma that responds well to treatment. After one treatment and fluids the patient bounced back, and the nurse admitted she had been wrong.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block" id="prilagodjavanje">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Prilagođavanje</span><span class="en">Adjusting</span></span>
+      <h2><span class="sr">Terapija se kroji po vama</span><span class="en">Treatment is tailored to you</span></h2>
+      <p><span class="sr">Mnoge porodice se iznenade kada čuju koliko toga može da se promeni. Pre nego što kažete „ne“ hemioterapiji, pitajte koje lekove i u kojoj kombinaciji lekar planira; visoka doza cisplatina nije isto što i gemcitabin.</span><span class="en">Many families are surprised by how much can change. Before saying "no" to chemotherapy, ask which drugs and which combination the doctor plans; high-dose cisplatin is not the same as gemcitabine.</span></p>
+    </div>
+    <div class="grid3">
+      <div class="card s"><h3 class="plain-h"><span class="sr">Početi nisko, ići polako</span><span class="en">Start low, go slow</span></h3><p><span class="sr">Niža početna doza koja se povećava ako je dobro podnosite, ili smanjuje ako ne.</span><span class="en">A lower starting dose raised if you tolerate it, or lowered if not.</span></p></div>
+      <div class="card s"><h3 class="plain-h"><span class="sr">Ređe</span><span class="en">Less often</span></h3><p><span class="sr">Svake druge nedelje umesto svake, pa nedeljno ako ide dobro.</span><span class="en">Every other week instead of weekly, then weekly if it goes well.</span></p></div>
+      <div class="card s"><h3 class="plain-h"><span class="sr">Lek po lek</span><span class="en">Drug by drug</span></h3><p><span class="sr">Početi sa dva leka, pa dodavati treći i četvrti.</span><span class="en">Start with two drugs, then add a third and fourth.</span></p></div>
+      <div class="card s"><h3 class="plain-h"><span class="sr">„Odmor od leka“</span><span class="en">A "drug holiday"</span></h3><p><span class="sr">Pauza od 1–3 nedelje pred krstarenje ili venčanje, pa nastavak.</span><span class="en">A 1–3 week break before a cruise or wedding, then back on.</span></p></div>
+      <div class="card s"><h3 class="plain-h"><span class="sr">Jači lekovi protiv mučnine</span><span class="en">Stronger anti-nausea drugs</span></h3><p><span class="sr">Ako vam je muka, postoji mnogo načina da se to ublaži. Recite lekaru.</span><span class="en">If you're nauseous, there are many ways to ease it. Tell your doctor.</span></p></div>
+      <div class="card s"><h3 class="plain-h"><span class="sr">Manje lekova</span><span class="en">Fewer medicines</span></h3><p><span class="sr">Neka lekari pregledaju sve što uzimate i, ako može, uklone ono što nije neophodno. Ne prekidajte ništa sami.</span><span class="en">Have your doctors review everything you take and remove what isn't essential if possible. Don't stop anything yourself.</span></p></div>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3 class="plain-h"><span class="sr">Ne upoređujte se sa drugima</span><span class="en">Don't compare yourself to others</span></h3>
+        <p><span class="sr">Dva pacijenta na istoj kombinaciji: jedan kaže „ubijate me“, drugi „osećam se fantastično“. Ono što je bilo komšiji ne mora biti vama.</span><span class="en">Two patients on the same combination: one says "you're killing me", the other "I feel fabulous". What happened to a neighbour need not happen to you.</span></p>
+      </div>
+      <div class="card">
+        <h3 class="plain-h"><span class="sr">Znati kada stati</span><span class="en">Knowing when to stop</span></h3>
+        <p><span class="sr">Dođe trenutak kada terapija donosi više štete nego koristi, najčešće kod performans statusa 4. Dr Roman kaže porodicama: odluka nije o vama, nego o njima. Tada je hospicijska nega najbolji izbor.</span><span class="en">A point comes when treatment does more harm than good, most often at performance status 4. Dr Roman tells families: this decision is not about you, it's about them. Then hospice care is the best choice.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <section class="wrap block" id="zracenje">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Zračenje sa snimanja</span><span class="en">Radiation from scans</span></span>
+      <h2><span class="sr">Koliko zračenja ste primili?</span><span class="en">How much radiation have you received?</span></h2>
+      <p><span class="sr">Zračenje se meri u milisivertima (mSv) i sabira se tokom života. Statistički, rizik od raka počinje da raste iznad oko 100 mSv, kod dece i ranije. Za svakih 10 mSv procenjeni dodatni rizik od smrtonosnog raka je oko 1 na 2.000. Samim životom na Zemlji primimo oko 2,4 mSv godišnje, a let Njujork–London i nazad oko 0,1 mSv.</span><span class="en">Radiation is measured in millisieverts (mSv) and adds up over a lifetime. Statistically, cancer risk starts to rise above about 100 mSv, earlier in children. For every 10 mSv the estimated extra risk of fatal cancer is about 1 in 2,000. Just living on Earth gives about 2.4 mSv a year, and a New York–London round trip about 0.1 mSv.</span></p>
+    </div>
+    <div class="callout sage">
+      <p><span class="sr">Dobra vest za praćenje tumora glave i vrata: MR i ultrazvuk nemaju nikakvo zračenje.</span><span class="en">Good news for following head and neck tumours: MRI and ultrasound carry no radiation at all.</span></p>
+    </div>
+    <div class="calc" id="msv-calc">
+      <h3><span class="sr">Saberite svoja snimanja</span><span class="en">Add up your scans</span></h3>
+      <p class="muted small"><span class="sr">Upišite koliko puta ste imali svako snimanje.</span><span class="en">Enter how many times you've had each scan.</span></p>
+      <div class="dose-list">
+        <label><span><span class="sr">Ultrazvuk</span><span class="en">Ultrasound</span></span><span class="msv">0</span><input type="number" min="0" max="99" value="0" data-msv="0" aria-label="Ultrazvuk / Ultrasound"></label>
+        <label><span><span class="sr">Magnetna rezonanca (MR)</span><span class="en">MRI</span></span><span class="msv">0</span><input type="number" min="0" max="99" value="0" data-msv="0" aria-label="MR / MRI"></label>
+        <label><span><span class="sr">Snimak zuba</span><span class="en">Dental X-ray</span></span><span class="msv"><span class="sr">&lt;0,01</span><span class="en">&lt;0.01</span></span><input type="number" min="0" max="99" value="0" data-msv="0.01" aria-label="Zub / Dental"></label>
+        <label><span><span class="sr">Rendgen pluća</span><span class="en">Chest X-ray</span></span><span class="msv"><span class="sr">0,02</span><span class="en">0.02</span></span><input type="number" min="0" max="99" value="0" data-msv="0.02" aria-label="Rendgen pluća / Chest X-ray"></label>
+        <label><span><span class="sr">DEXA (gustina kostiju)</span><span class="en">DEXA (bone density)</span></span><span class="msv"><span class="sr">0,04</span><span class="en">0.04</span></span><input type="number" min="0" max="99" value="0" data-msv="0.04" aria-label="DEXA"></label>
+        <label><span><span class="sr">Mamografija</span><span class="en">Mammogram</span></span><span class="msv"><span class="sr">0,4</span><span class="en">0.4</span></span><input type="number" min="0" max="99" value="0" data-msv="0.4" aria-label="Mamografija / Mammogram"></label>
+        <label><span><span class="sr">CT glave</span><span class="en">CT head</span></span><span class="msv">2</span><input type="number" min="0" max="99" value="0" data-msv="2" aria-label="CT glave / CT head"></label>
+        <label><span><span class="sr">CT grudnog koša</span><span class="en">CT chest</span></span><span class="msv">7</span><input type="number" min="0" max="99" value="0" data-msv="7" aria-label="CT grudnog koša / CT chest"></label>
+        <label><span><span class="sr">Virtuelna kolonoskopija</span><span class="en">Virtual colonoscopy</span></span><span class="msv">~8</span><input type="number" min="0" max="99" value="0" data-msv="8" aria-label="Virtuelna kolonoskopija / Virtual colonoscopy"></label>
+        <label><span><span class="sr">CT abdomena i karlice</span><span class="en">CT abdomen and pelvis</span></span><span class="msv">10</span><input type="number" min="0" max="99" value="0" data-msv="10" aria-label="CT abdomena / CT abdomen"></label>
+        <label><span><span class="sr">Srčani test opterećenja, tehnecijum</span><span class="en">Nuclear stress test, technetium</span></span><span class="msv">10</span><input type="number" min="0" max="99" value="0" data-msv="10" aria-label="Tehnecijum / Technetium"></label>
+        <label><span><span class="sr">Srčani test opterećenja, sestamibi</span><span class="en">Nuclear stress test, sestamibi</span></span><span class="msv">12</span><input type="number" min="0" max="99" value="0" data-msv="12" aria-label="Sestamibi"></label>
+        <label><span><span class="sr">Kateterizacija srca bez / sa stentom</span><span class="en">Cardiac catheterisation without / with stent</span></span><span class="msv">7 / 12</span><input type="number" min="0" max="99" value="0" data-msv="9.5" aria-label="Kateterizacija / Catheterisation"></label>
+        <label><span><span class="sr">Srčani test opterećenja, talijum</span><span class="en">Nuclear stress test, thallium</span></span><span class="msv">15–25</span><input type="number" min="0" max="99" value="0" data-msv="20" aria-label="Talijum / Thallium"></label>
+        <label><span><span class="sr">PET-CT</span><span class="en">PET-CT</span></span><span class="msv">~25</span><input type="number" min="0" max="99" value="0" data-msv="25" aria-label="PET-CT"></label>
+      </div>
+      <div class="result"><b><span id="msv-total">0</span> mSv</b><span class="muted"><span class="sr">≈ <span class="msv-xray">0</span> rendgena pluća</span><span class="en">≈ <span class="msv-xray">0</span> chest X-rays</span></span></div>
+      <div style="height:10px; background:var(--bg); border-radius:5px; overflow:hidden"><div id="msv-bar" style="height:100%; width:0; background:var(--sage)"></div></div>
+      <p class="small muted" id="msv-note" aria-live="polite"></p>
+      <p class="small muted"><span class="sr">Za kateterizaciju i talijum uzeta je srednja vrednost. Primer Dr Romana: CT abdomena (10) + CT glave (2) + 5 mamografija (2) = 14 mSv, veoma malo.</span><span class="en">For catheterisation and thallium the middle value is used. Dr Roman's example: CT abdomen (10) + CT head (2) + 5 mammograms (2) = 14 mSv, very little.</span></p>
+    </div>
+    <div class="callout warn">
+      <h3><span class="sr">Ne odbijajte potrebno snimanje</span><span class="en">Don't refuse a needed scan</span></h3>
+      <p><span class="sr">Najveća greška bi bila odbiti važan pregled iz straha od zračenja. Mamografija ima samo 0,4 mSv, a rak dojke dobije svaka osma žena. Pravo pitanje je: „Doktore, da li postoji alternativa, kao MR ili ultrazvuk?“ Ako je ovo snimanje najbolje, korist je veća od rizika. Kod dece budite posebno oprezni.</span><span class="en">The biggest mistake would be refusing an important test out of fear of radiation. A mammogram is only 0.4 mSv, and one in eight women gets breast cancer. The right question is: "Doctor, is there an alternative, such as MRI or ultrasound?" If this scan is the best one, the benefit outweighs the risk. Be extra careful with children.</span></p>
+    </div>
+  </section>
+
+</main>
+<nav class="wrap pager" aria-label="Sledeća stranica / Next page"><a href="ishrana.html"><small><span class="sr">← Prethodno</span><span class="en">← Previous</span></small><b><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></b></a><a class="next" href="nalazi.html"><small><span class="sr">Sledeće →</span><span class="en">Next →</span></small><b><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></b></a></nav>
+<footer>
+  <div class="wrap foot">
+    <div class="sieve" aria-hidden="true"></div>
+    <p class="muted small"><span class="sr">Sajt su napravili</span><span class="en">Created by</span></p>
+    <p class="authors">Sanjin Hodžić &amp; Semin Zoranić</p>
+    <p><span class="sr">Veliki deo istraživanja urađen je uz pomoć Claude-a, AI asistenta kompanije Anthropic. Hvala!</span><span class="en">Much of the research was done with the help of Claude, the AI assistant made by Anthropic. Thank you!</span></p>
+    <div class="disclaimer">
+      <p><span class="sr">Ovaj sajt služi za informisanje i ne zamenjuje savet lekara. Autori nisu lekari. Sadržaj prenosi ono što su lekari i naučnici rekli u javnim predavanjima i razgovorima, uz navedeno ime govornika. Anthropic nije pregledao niti odobrio sadržaj. Svaku odluku o lečenju donesite zajedno sa svojim onkologom.</span><span class="en">This site is for information only and does not replace medical advice. The authors are not doctors. The content reports what doctors and scientists said in public talks and interviews, with each speaker named. Anthropic has not reviewed or endorsed the content. Make every treatment decision together with your oncologist.</span></p>
+    </div>
+    <nav class="foot-links" aria-label="Sve stranice / All pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></nav>
+    <p><button type="button" class="btn" id="change-lang"><span class="sr">Promeni jezik · Change language</span><span class="en">Change language · Promeni jezik</span></button></p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>

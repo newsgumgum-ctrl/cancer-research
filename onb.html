@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Olfaktorni neuroblastom · ONB Kompas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ONB Kompas: znanje o raku za pacijente i porodice / cancer knowledge for patients and families">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@500&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>try{var l=localStorage.getItem('onb-lang');if(l==='en'||l==='sr')document.documentElement.setAttribute('data-lang',l)}catch(e){}</script>
+
+<header class="bar">
+  <div class="wrap bar-in">
+    <a class="brand" href="index.html"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="none" stroke="var(--sage)" stroke-width="2"/><path d="M16 5 L19 16 L16 27 L13 16 Z" fill="var(--lav)"/><circle cx="16" cy="16" r="2.2" fill="var(--surface)"/></svg><span class="brand-name">ONB Kompas</span></a>
+    <nav class="nav" aria-label="Glavne stranice / Main pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html" aria-current="page"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a></nav>
+    <details class="more" id="more-menu">
+      <summary><span class="more-desk"><span class="sr">Više</span><span class="en">More</span></span><span class="more-mob"><span class="sr">Meni</span><span class="en">Menu</span></span><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="menu" role="menu"><a class="menu-primary" href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a class="menu-primary" href="onb.html" aria-current="page"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a class="menu-primary" href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a class="menu-primary" href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a class="menu-primary" href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><span class="menu-sep" aria-hidden="true"></span><span class="menu-label"><span class="sr">Saveti i vodiči</span><span class="en">Guides and advice</span></span><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></div>
+    </details>
+    <div class="lang" role="group" aria-label="Jezik / Language">
+      <button type="button" id="lang-sr" data-set-lang="sr" aria-pressed="true">SR</button>
+      <button type="button" id="lang-en" data-set-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+<main id="top">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <span class="eyebrow"><span class="sr">Za pacijente i porodice</span><span class="en">For patients and families</span></span>
+    <h1>
+      <span class="sr">Olfaktorni neuroblastom, <em>korak po korak</em></span>
+      <span class="en">Olfactory neuroblastoma, <em>one step at a time</em></span>
+    </h1>
+    <div class="prose">
+      <p class="lead sr">Retka bolest ne mora da znači usamljenost. Ovde smo skupili proverene informacije o bolesti, lečenju i životu posle lečenja, jednostavnim rečima i sa izvorima.</p>
+      <p class="lead en">A rare disease does not have to mean facing it alone. Here we gathered checked information about the disease, its treatment and life afterwards, in plain words and with sources.</p>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>3–6%</b><span class="sr">svih tumora nosa i sinusa</span><span class="en">of all nose and sinus tumours</span></div>
+      <div class="fact"><b>~51</b><span class="sr">godina, srednja starost pri dijagnozi (može i kod dece)</span><span class="en">years, median age at diagnosis (children can be affected too)</span></div>
+      <div class="fact"><b>91%</b><span class="sr">petogodišnje preživljavanje u velikoj seriji endoskopskih operacija (339 pacijenata)</span><span class="en">five-year survival in a large series of endoscopic surgery (339 patients)</span></div>
+    </div>
+    <div class="note-hope">
+      <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="9" fill="none" stroke="var(--lav)" stroke-width="2"/><path d="M6 10.5l2.6 2.6L14 7.6" fill="none" stroke="var(--lav)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p class="sr">Stenford (Stanford Health Care) piše da se većina ljudi sa olfaktornim neuroblastomom izleči lečenjem. Brojevi na ovom sajtu su proseci iz studija. Vaš lekar zna vaš slučaj.</p>
+      <p class="en">Stanford Health Care writes that most people with olfactory neuroblastoma are cured with treatment. The numbers on this site are averages from studies. Your doctor knows your case.</p>
+    </div>
+  </div>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- DISEASE -->
+  <section class="wrap block" id="bolest">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Bolest</span><span class="en">The disease</span></span>
+      <h2><span class="sr">Šta je olfaktorni neuroblastom?</span><span class="en">What is olfactory neuroblastoma?</span></h2>
+      <p class="sr">Olfaktorni neuroblastom (drugo ime: estezioneuroblastom, skraćeno ONB) je redak tumor koji nastaje visoko u nosu, iz ćelija zaduženih za njuh. To mesto je odmah ispod tanke koštane pločice koja liči na sito (lamina cribrosa). Kroz njene rupice nervna vlakna za njuh idu do mozga. Zato je blizina mozga i oka važna za plan lečenja.</p>
+      <p class="en">Olfactory neuroblastoma (also called esthesioneuroblastoma, or ONB) is a rare tumour that starts high up in the nose, in the cells that sense smell. That spot sits right below a thin plate of bone shaped like a sieve (the cribriform plate). Smell nerve fibres pass through its tiny holes to the brain. That is why the nearby brain and eye matter when treatment is planned.</p>
+    </div>
+
+    <figure class="figure" style="margin:0">
+      <svg viewBox="0 0 640 300" role="img" aria-labelledby="anat-t">
+        <title id="anat-t">Šema: mozak, sitasta kost i nosna šupljina / Diagram: brain, cribriform plate and nasal cavity</title>
+        <rect x="20" y="16" width="600" height="70" rx="16" fill="var(--lav-soft)"/>
+        <text x="40" y="58" font-size="17" fill="var(--ink)" class="sr">Mozak</text>
+        <text x="40" y="58" font-size="17" fill="var(--ink)" class="en">Brain</text>
+        <ellipse cx="320" cy="80" rx="130" ry="13" fill="var(--lav)" opacity="0.55"/>
+        <text x="460" y="58" font-size="13" fill="var(--muted)" class="sr">mirisni bulbus</text>
+        <text x="460" y="58" font-size="13" fill="var(--muted)" class="en">olfactory bulb</text>
+        <g stroke="var(--lav)" stroke-width="2.5" stroke-linecap="round">
+          <line x1="211" y1="86" x2="211" y2="150"/><line x1="255" y1="86" x2="255" y2="150"/><line x1="299" y1="86" x2="299" y2="150"/>
+          <line x1="343" y1="86" x2="343" y2="150"/><line x1="387" y1="86" x2="387" y2="150"/><line x1="431" y1="86" x2="431" y2="150"/>
+        </g>
+        <line x1="40" y1="108" x2="600" y2="108" stroke="var(--muted)" stroke-width="14" stroke-dasharray="34 10"/>
+        <text x="40" y="136" font-size="13" fill="var(--muted)" class="sr">sitasta kost (lamina cribrosa)</text>
+        <text x="40" y="136" font-size="13" fill="var(--muted)" class="en">cribriform plate ("the sieve")</text>
+        <rect x="20" y="146" width="600" height="138" rx="16" fill="var(--sage-soft)"/>
+        <rect x="20" y="146" width="600" height="20" rx="8" fill="var(--sage)" opacity="0.25"/>
+        <text x="40" y="266" font-size="17" fill="var(--ink)" class="sr">Nosna šupljina</text>
+        <text x="40" y="266" font-size="17" fill="var(--ink)" class="en">Nasal cavity</text>
+        <ellipse cx="365" cy="188" rx="52" ry="30" fill="var(--warn)" opacity="0.85"/>
+        <path d="M420 192 L470 214" stroke="var(--ink)" stroke-width="1.25"/>
+        <text x="476" y="220" font-size="14" fill="var(--ink)" class="sr">ovde tumor počinje</text>
+        <text x="476" y="220" font-size="14" fill="var(--ink)" class="en">where the tumour starts</text>
+        <text x="476" y="238" font-size="12" fill="var(--muted)" class="sr">ćelije za njuh</text>
+        <text x="476" y="238" font-size="12" fill="var(--muted)" class="en">smell cells</text>
+      </svg>
+      <figcaption><span class="sr">Pojednostavljena šema, nije u razmeri.</span><span class="en">Simplified drawing, not to scale.</span> <span class="swipe"><span class="sr">Povucite sliku levo-desno.</span><span class="en">Swipe the drawing sideways.</span></span></figcaption>
+    </figure>
+
+    <div class="grid2">
+      <div class="card">
+        <h3><span class="sr">Česti prvi znaci</span><span class="en">Common first signs</span></h3>
+        <ul class="clean symptoms">
+          <li><span class="dot"></span><span><span class="sr">Zapušen nos, često samo s jedne strane</span><span class="en">Blocked nose, often on one side only</span></span></li>
+          <li><span class="dot"></span><span><span class="sr">Krvarenje iz nosa</span><span class="en">Nosebleeds</span></span></li>
+          <li><span class="dot"></span><span><span class="sr">Slabiji ili izgubljen njuh, ponekad godinama pre dijagnoze</span><span class="en">Weaker or lost sense of smell, sometimes for years before diagnosis</span></span></li>
+          <li><span class="dot"></span><span><span class="sr">Kod većih tumora: promene vida, otok lica, glavobolja</span><span class="en">With larger tumours: vision changes, facial swelling, headache</span></span></li>
+        </ul>
+        <p class="muted small"><span class="sr">Znaci liče na prehladu ili sinusitis, pa od prvih tegoba do dijagnoze obično prođe 6–12 meseci.</span><span class="en">The signs look like a cold or sinusitis, so it usually takes 6–12 months from first symptoms to diagnosis.</span></p>
+      </div>
+      <div class="card">
+        <h3><span class="sr">Kako se postavlja dijagnoza</span><span class="en">How it is diagnosed</span></h3>
+        <ul class="clean symptoms">
+          <li><span class="dot"></span><span><span class="sr">ORL lekar pregleda nos kamerom (endoskopija)</span><span class="en">An ENT doctor looks inside the nose with a camera (endoscopy)</span></span></li>
+          <li><span class="dot"></span><span><span class="sr">Uzima se mali uzorak tkiva (biopsija)</span><span class="en">A small tissue sample is taken (biopsy)</span></span></li>
+          <li><span class="dot"></span><span><span class="sr">MR i CT pokazuju veličinu tumora i odnos prema oku i mozgu</span><span class="en">MRI and CT show the tumour's size and how close it is to the eye and brain</span></span></li>
+          <li><span class="dot"></span><span><span class="sr">Proveravaju se i limfni čvorovi vrata</span><span class="en">The lymph nodes in the neck are checked too</span></span></li>
+        </ul>
+        <p class="muted small"><span class="sr">Za ovaj tumor nisu poznati faktori rizika. Niste ništa pogrešno uradili.</span><span class="en">No risk factors are known for this tumour. You did nothing wrong.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- STAGES -->
+  <section class="wrap block" id="stadijumi">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Stadijum i gradus</span><span class="en">Stage and grade</span></span>
+      <h2><span class="sr">Dve oznake koje ćete viđati u nalazima</span><span class="en">Two labels you will see in your reports</span></h2>
+      <p class="sr"><strong>Stadijum</strong> govori koliko se tumor proširio. <strong>Gradus</strong> govori kako ćelije izgledaju pod mikroskopom. Obe oznake zajedno pomažu lekarima da izaberu lečenje.</p>
+      <p class="en"><strong>Stage</strong> tells how far the tumour has spread. <strong>Grade</strong> tells how the cells look under the microscope. Together they help doctors choose treatment.</p>
+    </div>
+
+    <h3><span class="sr">Stadijum po Kadišu (Kadish, modifikovan)</span><span class="en">Kadish stage (modified)</span></h3>
+    <div class="grid4">
+      <div class="card"><div class="stage-letter">A</div><div class="stage-dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div><p><span class="sr">Tumor je samo u nosnoj šupljini.</span><span class="en">Tumour only in the nasal cavity.</span></p></div>
+      <div class="card"><div class="stage-letter">B</div><div class="stage-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></div><p><span class="sr">Nosna šupljina i sinusi.</span><span class="en">Nasal cavity and sinuses.</span></p></div>
+      <div class="card"><div class="stage-letter">C</div><div class="stage-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div><p><span class="sr">Širi se van nosa i sinusa, na primer ka oku ili lobanji.</span><span class="en">Spreads beyond the nose and sinuses, for example towards the eye or skull.</span></p></div>
+      <div class="card"><div class="stage-letter">D</div><div class="stage-dots" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div><p><span class="sr">Proširenje u limfne čvorove vrata ili dalje.</span><span class="en">Spread to the neck lymph nodes or further.</span></p></div>
+    </div>
+
+    <h3><span class="sr">Gradus po Hajamsu (Hyams)</span><span class="en">Hyams grade</span></h3>
+    <div class="card" style="gap:14px">
+      <div class="hyams">
+        <div class="hy-low"><b>I</b><span class="sr">najpovoljniji</span><span class="en">most favourable</span></div>
+        <div class="hy-low"><b>II</b><span class="sr">nizak</span><span class="en">low</span></div>
+        <div class="hy-high"><b>III</b><span class="sr">visok</span><span class="en">high</span></div>
+        <div class="hy-high"><b>IV</b><span class="sr">najagresivniji</span><span class="en">most aggressive</span></div>
+      </div>
+      <div class="hyams-legend">
+        <span class="sr">Nizak gradus (I–II): 80% živih posle 5 godina</span><span class="en">Low grade (I–II): 80% alive at 5 years</span>
+        <span class="sr">Visok gradus (III–IV): 54% posle 5 godina</span><span class="en">High grade (III–IV): 54% at 5 years</span>
+      </div>
+      <p class="muted small"><span class="sr">Brojevi su iz meta-analize starijih studija i ne uzimaju u obzir novije metode lečenja. Gradus je procena patologa i može se razlikovati od laboratorije do laboratorije.</span><span class="en">These figures come from a meta-analysis of older studies and do not reflect newer treatment. Grade is a pathologist's judgement and can differ between labs.</span></p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- TREATMENT -->
+  <section class="wrap block" id="lecenje">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Lečenje</span><span class="en">Treatment</span></span>
+      <h2><span class="sr">Kako izgleda lečenje</span><span class="en">What treatment looks like</span></h2>
+      <p class="sr">Osnova lečenja je operacija. Posle nje često sledi zračenje. Redosled i kombinaciju bira tim lekara za svakog pacijenta posebno.</p>
+      <p class="en">Surgery is the foundation of treatment. Radiotherapy often follows. A team of doctors chooses the order and combination for each patient.</p>
+    </div>
+    <ol class="path">
+      <li>
+        <h3><span class="sr">Operacija</span><span class="en">Surgery</span></h3>
+        <p><span class="sr">Danas najčešće kroz nos, kamerom (endoskopski), bez reza na licu. Kod velikih tumora kombinuje se sa otvorenom operacijom.</span><span class="en">Today usually done through the nose with a camera (endoscopic), with no cut on the face. Large tumours may need open surgery as well.</span></p>
+      </li>
+      <li>
+        <h3><span class="sr">Zračenje</span><span class="en">Radiotherapy</span></h3>
+        <p><span class="sr">Najčešće počinje 4–6 nedelja posle operacije, pet dana nedeljno oko 6 nedelja. Uobičajena doza je 50–60 Gy.</span><span class="en">Usually starts 4–6 weeks after surgery, five days a week for about 6 weeks. The usual dose is 50–60 Gy.</span></p>
+      </li>
+      <li class="opt">
+        <h3><span class="sr">Hemioterapija, ako treba</span><span class="en">Chemotherapy, if needed</span></h3>
+        <p><span class="sr">Uglavnom kada se tumor proširio ka mozgu, oku ili limfnim čvorovima, ili kada se vrati.</span><span class="en">Mainly when the tumour has spread towards the brain, eye or lymph nodes, or when it comes back.</span></p>
+      </li>
+      <li>
+        <h3><span class="sr">Praćenje</span><span class="en">Follow-up</span></h3>
+        <p><span class="sr">Redovni MR i pregledi, dugo godina. Više u sledećem delu.</span><span class="en">Regular MRI scans and check-ups for many years. More in the next section.</span></p>
+      </li>
+    </ol>
+
+    <div class="callout">
+      <span class="tag lav"><span class="sr">Nova mogućnost</span><span class="en">A newer option</span></span>
+      <h3><span class="sr">SSTR2: „brava“ na tumorskim ćelijama</span><span class="en">SSTR2: a "lock" on the tumour cells</span></h3>
+      <p class="sr">Mnogi olfaktorni neuroblastomi na površini imaju receptor SSTR2. Ako patolog u nalazu napiše „SSTR2 pozitivan“, to otvara dve mogućnosti. Prva je posebno snimanje (Ga-68 DOTATATE ili DOTATOC PET) koje pokazuje gde se tumor nalazi. Druga je ciljano zračenje iznutra (PRRT, Lutecijum-177 DOTATATE), za tumore koji se vrate ili prošire.</p>
+      <p class="en">Many olfactory neuroblastomas carry the SSTR2 receptor on their surface. If your pathology report says "SSTR2 positive", two options open up. One is a special scan (Ga-68 DOTATATE or DOTATOC PET) that shows where the tumour is. The other is targeted radiation from inside the body (PRRT, Lutetium-177 DOTATATE) for tumours that come back or spread.</p>
+      <p class="sr">PRRT je za ovaj tumor opisan u manjim serijama i prikazima slučajeva. U jednom prikazu iz 2025. godine pacijentkinja sa proširenom bolešću primila je 4 ciklusa i bolest je bila pod kontrolom oko 12 meseci, uz blage neželjene efekte. To nije standardna terapija, ali je dobro pitanje za vašeg onkologa.</p>
+      <p class="en">PRRT for this tumour has been described in small series and case reports. In a 2025 case report, a woman with spread disease received 4 cycles and her disease stayed under control for about 12 months, with mild side effects. It is not standard treatment yet, but it is a good question for your oncologist.</p>
+    </div>
+
+    <div class="callout sage">
+      <span class="tag good"><span class="sr">Kliničko istraživanje</span><span class="en">Research study</span></span>
+      <h3><span class="sr">Studija Nacionalnog instituta za rak (SAD)</span><span class="en">US National Cancer Institute study</span></h3>
+      <p class="sr">NIH u Betezdi (SAD) vodi studiju prirodnog toka bolesti kod dece i odraslih sa olfaktornim neuroblastomom (NCT04755205). Učešće je besplatno. Studija prati simptome, tok bolesti i odgovor na lečenje. Pre prijave proverite da li još prima pacijente.</p>
+      <p class="en">The NIH in Bethesda (USA) runs a natural history study of children and adults with olfactory neuroblastoma (NCT04755205). Taking part is free. The study follows symptoms, how the disease behaves and how it responds to treatment. Check whether it is still enrolling before applying.</p>
+      <p class="small muted"><span class="sr">Kontakt naveden u objavi NCI iz 2023: Marissa B. Mallek, R.N., tel. +1 240 760 7498</span><span class="en">Contact listed in the 2023 NCI post: Marissa B. Mallek, R.N., phone +1 240 760 7498</span></p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- FOLLOW-UP -->
+  <section class="wrap block" id="pracenje">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Praćenje</span><span class="en">Follow-up</span></span>
+      <h2><span class="sr">Zašto je praćenje dugo</span><span class="en">Why follow-up lasts so long</span></h2>
+      <p class="sr">Ovaj tumor ume da bude strpljiv. Kada se vrati, to se često desi tek posle 5 ili više godina. Zato se praćenje ne završava posle pet godina, kao kod mnogih drugih tumora.</p>
+      <p class="en">This tumour can be patient. When it returns, it often does so only after 5 years or more. That is why follow-up does not stop at five years, as it does for many other cancers.</p>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <span class="tag lav"><span class="sr">Dobro je znati</span><span class="en">Good to know</span></span>
+        <ul class="dots">
+          <li><span class="sr">Povratak bolesti se javlja kod 30–60% pacijenata, ali se često ponovo uspešno leči.</span><span class="en">The disease returns in 30–60% of patients, but it can often be treated successfully again.</span></li>
+          <li><span class="sr">Kasni čvorovi na vratu su česti i obično se uspešno leče kada se otkriju na vreme.</span><span class="en">Late lymph nodes in the neck are common and are usually treated successfully when found early.</span></li>
+          <li><span class="sr">Kod visokog gradusa bolest se u proseku vraća ranije nego kod niskog.</span><span class="en">High-grade tumours tend to return sooner than low-grade ones.</span></li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag good"><span class="sr">Šta tražiti od lekara</span><span class="en">What to ask your doctor for</span></span>
+        <ul class="dots">
+          <li><span class="sr">Pisani plan praćenja za narednih 10 i više godina</span><span class="en">A written follow-up plan for the next 10 years or more</span></li>
+          <li><span class="sr">MR uvek u istoj ustanovi i istom tehnikom (tanki preseci), da bi se snimci mogli porediti</span><span class="en">MRI in the same centre with the same technique (thin slices), so scans can be compared</span></li>
+          <li><span class="sr">Pregled vrata (palpacija ili ultrazvuk) uz svaki MR</span><span class="en">A neck check (exam or ultrasound) with each MRI</span></li>
+          <li><span class="sr">Posle zračenja baze lobanje: povremena provera hormona hipofize</span><span class="en">After skull-base radiotherapy: periodic pituitary hormone tests</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout sage">
+      <p><span class="sr">Ishrana, metabolizam i lekovi o kojima se priča imaju svoje stranice: <a href="hrana.html">Hrana kao lek</a>, <a href="ishrana.html">Ishrana na terapiji</a>, <a href="metabolizam.html">Metabolizam raka</a> i <a href="lekovi.html">Antiparazitici</a>.</span><span class="en">Food, metabolism and the much-discussed drugs have their own pages: <a href="hrana.html">Food as medicine</a>, <a href="ishrana.html">Eating during treatment</a>, <a href="metabolizam.html">Cancer metabolism</a> and <a href="lekovi.html">Antiparasitics</a>.</span></p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- STORY -->
+  <section class="wrap block" id="prica">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Jedna priča</span><span class="en">One story</span></span>
+      <h2><span class="sr">Jedan put kroz lečenje</span><span class="en">One path through treatment</span></h2>
+      <p class="sr">Anonimni primer jedne pacijentkinje. Svaki slučaj je drugačiji, ali je lakše kada vidite da je neko već prošao isti put.</p>
+      <p class="en">An anonymous example of one woman. Every case is different, but it helps to see that someone has already walked the same road.</p>
+    </div>
+    <ol class="story">
+      <li><span class="when"><span class="sr">početak</span><span class="en">start</span></span><div class="what"><p><span class="sr">Mesecima zapušena desna nozdrva, bol u licu i krvarenje iz nosa. Prvo se mislilo na polip.</span><span class="en">Months of a blocked right nostril, facial pain and nosebleeds. At first it looked like a polyp.</span></p></div></li>
+      <li><span class="when"><span class="sr">~6. mesec</span><span class="en">~month 6</span></span><div class="what"><p><span class="sr">CT i MR, pa endoskopska operacija. Dijagnoza: olfaktorni neuroblastom, Hyams gradus I, SSTR2 pozitivan. Deo tumora nije mogao bezbedno da se ukloni.</span><span class="en">CT and MRI, then endoscopic surgery. Diagnosis: olfactory neuroblastoma, Hyams grade I, SSTR2 positive. Part of the tumour could not be removed safely.</span></p></div></li>
+      <li><span class="when"><span class="sr">+2 meseca</span><span class="en">+2 months</span></span><div class="what"><p><span class="sr">Zračenje: 30 dana zračenja, ukupno 60 Gy. Neželjeni efekti su bili blagi (iritacija sluzokože i kože).</span><span class="en">Radiotherapy: 30 sessions, 60 Gy in total. Side effects were mild (irritated lining of the nose and skin).</span></p></div></li>
+      <li class="win"><span class="when"><span class="sr">+8 meseci</span><span class="en">+8 months</span></span><div class="what"><p><span class="sr">Prvi MR posle zračenja: ostatak tumora oko 65% manji nego pre lečenja.</span><span class="en">First MRI after radiotherapy: the remaining tumour about 65% smaller than before treatment.</span></p></div></li>
+      <li class="win"><span class="when"><span class="sr">+17 meseci</span><span class="en">+17 months</span></span><div class="what"><p><span class="sr">Ostatak se i dalje polako smanjuje, bez širenja. Opšte stanje dobro, svakodnevni život bez većih tegoba.</span><span class="en">The remnant keeps shrinking slowly, with no spread. Feeling well, daily life without major complaints.</span></p></div></li>
+      <li class="win"><span class="when"><span class="sr">danas</span><span class="en">today</span></span><div class="what"><p><span class="sr">Stabilno. Redovan MR na nekoliko meseci, uz ishranu, kretanje i pitanja koja beleži za svaku kontrolu. Ovaj sajt je nastao iz tih pitanja.</span><span class="en">Stable. Regular MRI every few months, along with good food, movement and a list of questions for each check-up. This site grew out of those questions.</span></p></div></li>
+    </ol>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- QUESTIONS -->
+  <section class="wrap block" id="pitanja">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Pitanja za lekara</span><span class="en">Questions for your doctor</span></span>
+      <h2><span class="sr">Ponesite ova pitanja na kontrolu</span><span class="en">Take these questions to your next visit</span></h2>
+      <p class="sr">Kopirajte listu u telefon ili je prepišite. Lekari vole pripremljene pacijente.</p>
+      <p class="en">Copy the list to your phone or write it down. Doctors appreciate prepared patients.</p>
+    </div>
+    <ul class="checklist sr" id="q-sr">
+      <li>Koji je tačan stadijum i gradus mog tumora?</li>
+      <li>Da li je tumor SSTR2 pozitivan i da li bi mi koristio DOTATATE PET?</li>
+      <li>Koliko dugo i koliko često ću raditi MR? Može li uvek u istoj ustanovi, sa tankim presecima?</li>
+      <li>Da li treba pratiti limfne čvorove vrata ultrazvukom?</li>
+      <li>Treba li da proveravam hormone hipofize posle zračenja?</li>
+      <li>Da li je moj slučaj razmatran u centru za tumore baze lobanje? Mogu li dobiti drugo mišljenje?</li>
+      <li>Postoje li kliničke studije za koje sam kandidat?</li>
+      <li>Koji suplementi su bezbedni uz moju terapiju?</li>
+      <li>Imate li preporuku za nutricionistu i psihoonkologa?</li>
+    </ul>
+    <ul class="checklist en" id="q-en">
+      <li>What exactly are the stage and grade of my tumour?</li>
+      <li>Is the tumour SSTR2 positive, and would a DOTATATE PET scan help me?</li>
+      <li>How long and how often will I have MRI scans? Can they always be done in the same centre, with thin slices?</li>
+      <li>Should my neck lymph nodes be checked with ultrasound?</li>
+      <li>Should my pituitary hormones be checked after radiotherapy?</li>
+      <li>Has my case been reviewed at a skull-base tumour centre? Can I get a second opinion?</li>
+      <li>Are there clinical trials I might be eligible for?</li>
+      <li>Which supplements are safe with my treatment?</li>
+      <li>Can you refer me to a dietitian and a psycho-oncologist?</li>
+    </ul>
+    <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap">
+      <button type="button" class="btn solid" data-copy="q"><span class="sr">Kopiraj pitanja</span><span class="en">Copy questions</span></button>
+      <span class="copied" id="q-msg" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="sieve" aria-hidden="true"></div></div>
+
+  <!-- SOURCES -->
+  <section class="wrap block" id="izvori">
+    <div class="sec-head">
+      <span class="eyebrow"><span class="sr">Izvori</span><span class="en">Sources</span></span>
+      <h2><span class="sr">Odakle su informacije</span><span class="en">Where the information comes from</span></h2>
+      <p class="sr">Proverili smo ih u oktobru 2026. Medicina napreduje, pa uvek pitajte svog lekara šta je novo.</p>
+      <p class="en">We checked them in October 2026. Medicine moves on, so always ask your doctor what is new.</p>
+    </div>
+    <ol class="sources">
+      <li><a href="https://www.frontiersin.org/articles/10.3389/fonc.2023.1242453/pdf" target="_blank" rel="noopener">Tosoni A. et al. Olfactory neuroblastoma: diagnosis, management, and current treatment options. Frontiers in Oncology, 2023</a></li>
+      <li><a href="https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1512771/pdf" target="_blank" rel="noopener">Koch M. et al. Systematic review of surgery for esthesioneuroblastoma (1,434 patients). Frontiers in Oncology, 2025</a></li>
+      <li><a href="https://stanfordhealthcare.org/medical-conditions/ear-nose-and-throat/olfactory-neuroblastoma.html" target="_blank" rel="noopener">Stanford Health Care: Olfactory Neuroblastoma</a></li>
+      <li><a href="https://scholar.usuhs.edu/en/publications/risk-of-delayed-lymph-node-metastasis-in-clinically-n0-esthesione/" target="_blank" rel="noopener">Peacock J.G. et al. Risk of delayed lymph node metastasis in clinically N0 esthesioneuroblastoma. J Neurol Surg B, 2017</a></li>
+      <li><a href="https://pubmed.ncbi.nlm.nih.gov/34980502/" target="_blank" rel="noopener">Lechner M. et al. Clinical outcomes, Kadish-INSICA staging and therapeutic targeting of somatostatin receptor 2 in olfactory neuroblastoma</a></li>
+      <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12615023" target="_blank" rel="noopener">Avila-Rodriguez V. et al. Lutetium-177 DOTATATE for the treatment of esthesioneuroblastoma: a case report. Case Rep Oncol Med, 2025</a></li>
+      <li><a href="https://ccr.cancer.gov/news/article/clinical-trial-researching-olfactory-neuroblastoma" target="_blank" rel="noopener">NCI Center for Cancer Research: Clinical trial researching olfactory neuroblastoma</a></li>
+      <li><a href="https://clinicaltrials.gov/study/NCT04755205" target="_blank" rel="noopener">ClinicalTrials.gov: NCT04755205</a></li>
+    </ol>
+  </section>
+
+</main>
+<nav class="wrap pager" aria-label="Sledeća stranica / Next page"><a href="index.html"><small><span class="sr">← Prethodno</span><span class="en">← Previous</span></small><b><span class="sr">Početna</span><span class="en">Home</span></b></a><a class="next" href="lekovi.html"><small><span class="sr">Sledeće →</span><span class="en">Next →</span></small><b><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></b></a></nav>
+<footer>
+  <div class="wrap foot">
+    <div class="sieve" aria-hidden="true"></div>
+    <p class="muted small"><span class="sr">Sajt su napravili</span><span class="en">Created by</span></p>
+    <p class="authors">Sanjin Hodžić &amp; Semin Zoranić</p>
+    <p><span class="sr">Veliki deo istraživanja urađen je uz pomoć Claude-a, AI asistenta kompanije Anthropic. Hvala!</span><span class="en">Much of the research was done with the help of Claude, the AI assistant made by Anthropic. Thank you!</span></p>
+    <div class="disclaimer">
+      <p><span class="sr">Ovaj sajt služi za informisanje i ne zamenjuje savet lekara. Autori nisu lekari. Sadržaj prenosi ono što su lekari i naučnici rekli u javnim predavanjima i razgovorima, uz navedeno ime govornika. Anthropic nije pregledao niti odobrio sadržaj. Svaku odluku o lečenju donesite zajedno sa svojim onkologom.</span><span class="en">This site is for information only and does not replace medical advice. The authors are not doctors. The content reports what doctors and scientists said in public talks and interviews, with each speaker named. Anthropic has not reviewed or endorsed the content. Make every treatment decision together with your oncologist.</span></p>
+    </div>
+    <nav class="foot-links" aria-label="Sve stranice / All pages"><a href="index.html"><span class="sr">Početna</span><span class="en">Home</span></a><a href="onb.html"><span class="sr">Olfaktorni neuroblastom</span><span class="en">Olfactory neuroblastoma</span></a><a href="lekovi.html"><span class="sr">Antiparazitici</span><span class="en">Antiparasitics</span></a><a href="metabolizam.html"><span class="sr">Metabolizam raka</span><span class="en">Cancer metabolism</span></a><a href="hrana.html"><span class="sr">Hrana kao lek</span><span class="en">Food as medicine</span></a><a href="ishrana.html"><span class="sr">Ishrana na terapiji</span><span class="en">Eating during treatment</span></a><a href="lecenje.html"><span class="sr">Tokom lečenja</span><span class="en">During treatment</span></a><a href="nalazi.html"><span class="sr">Razumeti nalaze</span><span class="en">Understanding reports</span></a><a href="izvori.html"><span class="sr">Izvori</span><span class="en">Sources</span></a></nav>
+    <p><button type="button" class="btn" id="change-lang"><span class="sr">Promeni jezik · Change language</span><span class="en">Change language · Promeni jezik</span></button></p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
